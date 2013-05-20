@@ -33,15 +33,15 @@ How to use this repo
     <pre>
     mv www www-orig
     
-    mv phonegap-angluar-ratchet www
+    mv phonegap-angular-ratchet www
     </pre>
 5. Test AppName on PhoneGap Ripple
     <pre>
     cordova platform add ios
     
-    cordova ripple ios 9000 # at this point the browser should open with the app running
+    cordova ripple ios 9000 # at this point the browser should open with the app running, ripple awesome!
     </pre>
-6. Build App for Native
+6. Build App for Native (iOS in this case)
     <pre>
     cd platforms/ios
 
