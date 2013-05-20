@@ -1,4 +1,56 @@
 phonegap-angular-ratchet
 ========================
+A sample PhoneGap app with Angular JS, Ratchet UI and FastClick
 
-A sample Phonegap App with AngularJS Framework, Ratchet UI and Fastclick
+PhoneGap apps need special care and attention to perform at their best. Existing full stack frameworks and UI kits tend to be heavier and result in slower and laggy(non snappy) apps when run on the phones.
+
+AngularJS appears to give the right kind of flexibitly for folks who come from Python Djano and Ruby on Rails. jQuery Mobile seems too huge and constraining when compared to AngularJS and its alternatives like DojoJS, BackboneJS and EmberJS.
+
+Ratchet is very lightweight when compared to Bootstrap which is not so well suited for Mobile environment and tends to run slower. Alternatives here include the up and coming Topcoat from Adobe. Ratchet has almost no JS unlike Bootstrap which has jQuery dependency too.
+
+Desktop browsers are click based while Mobile environment is touch based. There is 300ms difference between a touch event and a click event. Touch events are available after ~4ms while click events are available ~300ms after the touch event, this is to handle the double tap event. As a result porting web+click based apps to mobile become laggy in mobile+touch environment. FastClick is a simple library to help with this. Its deliveres the click event when on web+click env, and touch event when on mobile+touch env.
+
+I got some real good advice on all these from Chistophe Coenraets Blog @ http://coenraets.org/blog/
+I have followed most of his 10 pt advice on making a cool and snappy PhoneGap App. 
+
+How to use this repo
+
+1. Install PhoneGap if you dont have already assuming you have npm and node already installed
+    <pre>
+    npm install -g cordova
+    </pre>
+2. Create a PhoneGap App
+    <pre>
+    cordova create [AppName] io.domainName.appName [AppName] 
+    
+    cd [AppName]
+    </pre>
+3. Clone this repo 
+    <pre>
+    git clone https://github.com/raveenb/phonegap-angular-ratchet/
+    </pre>
+4. Syncronize AppName and PhoneGap
+    <pre>
+    mv www www-orig
+    
+    mv phonegap-angluar-ratchet www
+    </pre>
+5. Test AppName on PhoneGap Ripple
+    <pre>
+    cordova platform add ios
+    
+    cordova ripple ios 9000 # at this point the browser should open with the app running
+    </pre>
+6. Build App for Native
+    <pre>
+    cd platforms/ios
+
+    open [AppName].xcodeproj
+    </pre>
+    build for simulators and test
+    
+    build for your device and test
+    
+
+    
+
