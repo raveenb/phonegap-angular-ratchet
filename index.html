@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <!-- <meta name="viewport" content="width=device-width"> -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">    
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/main.css -->
+    <!-- <link rel="stylesheet" href="styles/bootstrap.css"> -->
+    <link rel="stylesheet" href="styles/ratchet.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="SPAApp">
+    <!-- Add your site or application content here -->
+    <div class="container" ng-view></div>
+
+    <script src="cordova.js"></script>
+    <script src="components/angular.js"></script>
+		<script src="components/jquery.min.js"></script>
+		<!-- 
+    <script src="components/bootstrap.js"></script>
+     -->
+    <script src="components/ratchet.js"></script>
+    <script src="components/fastclick.min.js"></script>
+
+    <!-- build:js scripts/scripts.js -->
+    <script src="app.js"></script>
+    <script src="controllers/controllers.js"></script>
+    <script src="services/alarmService.js"></script>
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    -->
+  </body>
+</html>

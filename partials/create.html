@@ -1,0 +1,24 @@
+
+<header class="bar-title">
+  <a class="button-prev" href="#">
+    Back
+  </a>
+  <h1 class="title">New Alarm</h1>
+</header>
+<div class="content">
+  <div class="input-group">
+    <div class="input-row">
+      <label>Date</label>
+      <input type="text" placeholder="Date format MM/DD/YYYY" ng-model="date">
+    </div>
+    <div class="input-row">
+      <label>Time</label>
+      <input type="text" placeholder="Time format HH:MM" ng-model="time">
+    </div>
+    <div class="input-row">
+      <label>Message</label>
+      <input type="text" placeholder="Msg Format SMS/140 Chars" ng-model="msg">
+    </div>
+  </div>
+  <a class="button-main button-block" ng-click="createAlarm()">Create Alarm</a>
+</div>
