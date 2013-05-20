@@ -10,8 +10,7 @@ Ratchet is very lightweight when compared to Bootstrap which is not so well suit
 
 Desktop browsers are click based while Mobile environment is touch based. There is 300ms difference between a touch event and a click event. Touch events are available after ~4ms while click events are available ~300ms after the touch event, this is to handle the double tap event. As a result porting web+click based apps to mobile become laggy in mobile+touch environment. FastClick is a simple library to help with this. Its deliveres the click event when on web+click env, and touch event when on mobile+touch env.
 
-I got some real good advice on all these from Chistophe Coenraets Blog @ http://coenraets.org/blog/
-I have followed most of his 10 pt advice on making a cool and snappy PhoneGap App. 
+I got some real good advice on all these from Chistophe Coenraets Blog @ http://coenraets.org/blog/ I have followed most of his 10 pt advice on making a cool and snappy PhoneGap App. You should check it out.
 
 How to use this repo
 
@@ -52,5 +51,13 @@ How to use this repo
     build for your device and test
     
 
-    
+PhoneGap - http://phonegap.com/
+AngularJS - http://angularjs.org/
+jQuery - http://jquery.com/
+jQueryMobile - http://jquerymobile.com/
+Ratchet - http://maker.github.io/ratchet/
+TopCoat - http://topcoat.io/
+BootStrap - http://twitter.github.io/bootstrap/
+FastClick - https://github.com/ftlabs/fastclick
+Ripple - http://ripple.incubator.apache.org/
 
