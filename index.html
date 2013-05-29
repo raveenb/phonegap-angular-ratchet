@@ -1,0 +1,154 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Phonegap-angular-ratchet</title>
+  <meta name="description" content="A sample Phonegap App with AngularJS Framework, Ratchet UI and Fastclick">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Phonegap-angular-ratchet</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">A sample Phonegap App with AngularJS Framework, Ratchet UI and Fastclick</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/raveenb/phonegap-angular-ratchet/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/raveenb/phonegap-angular-ratchet/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/raveenb/phonegap-angular-ratchet" class="code">View Phonegap-angular-ratchet on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a name="phonegap-angular-ratchet" class="anchor" href="#phonegap-angular-ratchet"><span class="octicon octicon-link"></span></a>phonegap-angular-ratchet</h1>
+
+<h1></h1>
+
+<p>A sample PhoneGap app with Angular JS, Ratchet UI and FastClick</p>
+
+<p>PhoneGap apps need special care and attention to perform at their best. Existing full stack frameworks and UI kits tend to be heavier and result in slower and laggy(non snappy) apps when run on the phones.</p>
+
+<p>AngularJS appears to give the right kind of flexibitly for folks who come from Python Djano and Ruby on Rails. jQuery Mobile seems too huge and constraining when compared to AngularJS and its alternatives like DojoJS, BackboneJS and EmberJS.</p>
+
+<p>Ratchet is very lightweight when compared to Bootstrap which is not so well suited for Mobile environment and tends to run slower. Alternatives here include the up and coming Topcoat from Adobe. Ratchet has almost no JS unlike Bootstrap which has jQuery dependency too.</p>
+
+<p>Desktop browsers are click based while Mobile environment is touch based. There is 300ms difference between a touch event and a click event. Touch events are available after ~4ms while click events are available ~300ms after the touch event, this is to handle the double tap event. As a result porting web+click based apps to mobile become laggy in mobile+touch environment. FastClick is a simple library to help with this. Its deliveres the click event when on web+click env, and touch event when on mobile+touch env.</p>
+
+<p>I got some real good advice on all these from Chistophe Coenraets Blog @ <a href="http://coenraets.org/blog/">http://coenraets.org/blog/</a> I have followed most of his 10 pt advice on making a cool and snappy PhoneGap App. You should check it out.</p>
+
+<h2>
+<a name="how-to-use-this-repo" class="anchor" href="#how-to-use-this-repo"><span class="octicon octicon-link"></span></a>How to use this repo</h2>
+
+<ol>
+<li>Install PhoneGap if you dont have already assuming you have npm and node already installed
+<pre>
+npm install -g cordova
+</pre>
+</li>
+<li>
+<p>Create a PhoneGap App</p>
+
+<pre>
+cordova create [AppName] io.domainName.appName [AppName] 
+
+cd [AppName]
+</pre>
+</li>
+<li>
+<p>Clone this repo </p>
+
+<pre>
+git clone https://github.com/raveenb/phonegap-angular-ratchet/
+</pre>
+</li>
+<li>
+<p>Syncronize AppName and PhoneGap</p>
+
+<pre>
+mv www www-orig
+
+mv phonegap-angular-ratchet www
+</pre>
+</li>
+<li>
+<p>Test AppName on PhoneGap Ripple</p>
+
+<pre>
+cordova platform add ios
+
+cordova ripple ios 9000 # at this point the browser should open with the app running, ripple awesome!
+</pre>
+</li>
+<li>
+<p>Build App for Native (iOS in this case)</p>
+
+<pre>
+cd platforms/ios
+
+open [AppName].xcodeproj
+</pre>
+
+<p>build for simulators and test</p>
+
+<p>build for your device and test</p>
+</li>
+</ol><ul>
+<li>PhoneGap - <a href="http://phonegap.com/">http://phonegap.com/</a>
+</li>
+<li>AngularJS - <a href="http://angularjs.org/">http://angularjs.org/</a>
+</li>
+<li>jQuery - <a href="http://jquery.com/">http://jquery.com/</a>
+</li>
+<li>jQueryMobile - <a href="http://jquerymobile.com/">http://jquerymobile.com/</a>
+</li>
+<li>Ratchet - <a href="http://maker.github.io/ratchet/">http://maker.github.io/ratchet/</a>
+</li>
+<li>TopCoat - <a href="http://topcoat.io/">http://topcoat.io/</a>
+</li>
+<li>BootStrap - <a href="http://twitter.github.io/bootstrap/">http://twitter.github.io/bootstrap/</a>
+</li>
+<li>FastClick - <a href="https://github.com/ftlabs/fastclick">https://github.com/ftlabs/fastclick</a>
+</li>
+<li>Ripple - <a href="http://ripple.incubator.apache.org/">http://ripple.incubator.apache.org/</a>
+</li>
+</ul>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/raveenb" class="avatar"><img src="https://secure.gravatar.com/avatar/3820decf71d521cdce2b266d4c477573?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="48" height="48"/></a> <a href="https://github.com/raveenb">raveenb</a> maintains <a href="https://github.com/raveenb/phonegap-angular-ratchet">Phonegap-angular-ratchet</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/raveenb/phonegap-angular-ratchet/tarball/master" class="tar">tar</a><a href="https://github.com/raveenb/phonegap-angular-ratchet/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
