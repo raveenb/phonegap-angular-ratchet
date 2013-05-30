@@ -1,5 +1,5 @@
-phonegap-angular-ratchet
-========================
+# phonegap-angular-ratchet
+
 A sample PhoneGap app with Angular JS, Ratchet UI and FastClick
 
 PhoneGap apps need special care and attention to perform at their best. Existing full stack frameworks and UI kits tend to be heavier and result in slower and laggy(non snappy) apps when run on the phones.
@@ -12,35 +12,35 @@ Desktop browsers are click based while Mobile environment is touch based. There 
 
 I got some real good advice on all these from Chistophe Coenraets Blog @ http://coenraets.org/blog/ I have followed most of his 10 pt advice on making a cool and snappy PhoneGap App. You should check it out.
 
-How to use this repo
+## How to use this repo
 
 1. Install PhoneGap if you dont have already assuming you have npm and node already installed
     <pre>
     npm install -g cordova
     </pre>
-2. Create a PhoneGap App
+1. Create a PhoneGap App
     <pre>
     cordova create [AppName] io.domainName.appName [AppName] 
     
     cd [AppName]
     </pre>
-3. Clone this repo 
+1. Clone this repo 
     <pre>
     git clone https://github.com/raveenb/phonegap-angular-ratchet/
     </pre>
-4. Syncronize AppName and PhoneGap
+1. Syncronize AppName and PhoneGap
     <pre>
     mv www www-orig
     
     mv phonegap-angular-ratchet www
     </pre>
-5. Test AppName on PhoneGap Ripple
+1. Test AppName on PhoneGap Ripple
     <pre>
     cordova platform add ios
     
     cordova ripple ios 9000 # at this point the browser should open with the app running, ripple awesome!
     </pre>
-6. Build App for Native (iOS in this case)
+1. Build App for Native (iOS in this case)
     <pre>
     cd platforms/ios
 
@@ -51,13 +51,12 @@ How to use this repo
     build for your device and test
     
 
-PhoneGap - http://phonegap.com/
-AngularJS - http://angularjs.org/
-jQuery - http://jquery.com/
-jQueryMobile - http://jquerymobile.com/
-Ratchet - http://maker.github.io/ratchet/
-TopCoat - http://topcoat.io/
-BootStrap - http://twitter.github.io/bootstrap/
-FastClick - https://github.com/ftlabs/fastclick
-Ripple - http://ripple.incubator.apache.org/
-
+* PhoneGap - http://phonegap.com/
+* AngularJS - http://angularjs.org/
+* jQuery - http://jquery.com/
+* jQueryMobile - http://jquerymobile.com/
+* Ratchet - http://maker.github.io/ratchet/
+* TopCoat - http://topcoat.io/
+* BootStrap - http://twitter.github.io/bootstrap/
+* FastClick - https://github.com/ftlabs/fastclick
+* Ripple - http://ripple.incubator.apache.org/
